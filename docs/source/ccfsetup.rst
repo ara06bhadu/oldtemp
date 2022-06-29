@@ -12,11 +12,14 @@ INFRA SETUP
 
 For the INFRA SETUP of CCF process like ingestion and dw these following steps have to be followed :
 
-   Set up AWS MWAA
-   ----------------
-   * Open the `Amazon MWAA console <https://console.aws.amazon.com/mwaa/home/`__.
+Set up AWS MWAA
+----------------
+   * Open the Amazon MWAA console by going to https://console.aws.amazon.com/mwaa/home/
    * Use the **AWS Region selector** to select your region.
    * Choose **Create environment**.
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZET50M20hkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
 RDS setup
 ---------
@@ -26,13 +29,14 @@ RDS setup
     b. Type - db.r5.xlarge
     c. Engine - Aurora MySQL 5.7.12
     d. Storage – 500 GB
-
+.. raw:: html
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/8OuZ-3efisI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Secret Manager
 ---------------
-   * New secret in AWS Secret Manager having RDS credentials stored with         "username" and "password" keys.
+   * New secret in AWS Secret Manager having RDS credentials stored with "username" and "password" keys.
 SES
 ----
-   * Emails should be verified in SES which will be used in configs for          sending notification mails.
+   * Emails should be verified in SES which will be used in configs for sending notification mails.
 EMR
 ----
    5.1. Following EMR configurations needed to configure CCF:
